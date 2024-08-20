@@ -1,10 +1,14 @@
 import React from 'react';
 import { products } from '../data/data'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Slidebar from '../components/Slidebar';
 
 const Products = () => {
+
   return (
+
     <div className="container mt-4">
+    <Slidebar />
       <div className="row">
         {products.map((product, index) => (
           <div
@@ -13,10 +17,11 @@ const Products = () => {
           >
             <div className="card h-100">
               <img
-                src="./images/img1.jpg" 
+                src={product.image}
                 className="card-img-top img-fluid" 
                 alt={product.name}
               />
+              
               <div className="card-body">
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text">Price: ${product.price}</p>
