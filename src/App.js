@@ -15,6 +15,7 @@ import Signup from './auth/Signup';
 import Login from './auth/Login';
 import { Toast } from 'bootstrap';
 import Product from './pages/Product';
+import Extra from './components/Extra';
 
 const  App=()=> {
   return (
@@ -27,7 +28,7 @@ const  App=()=> {
       <Route path='/Signup' element={<Signup/>}></Route>
       <Route path='/Login' element={<Login/>}></Route>
       <Route path='/Product' element={<Product/>}></Route>
-
+      <Route path='/Extra' element={<Extra/>}></Route>
       </Routes>
       <ToastContainer/>
 
