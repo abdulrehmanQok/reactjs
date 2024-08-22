@@ -25,6 +25,9 @@ const Navbar = () => {
         <li className="nav-item">
           <Link className="nav-link" to="/WeatherApp">WeatherApp</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/Country_data">Country_data</Link>
+        </li>
       
       </ul>
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">

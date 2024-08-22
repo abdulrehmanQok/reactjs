@@ -17,6 +17,7 @@ import { Toast } from 'bootstrap';
 import Product from './pages/Product';
 import Extra from './components/Extra'; 
 import WeatherApp from './components/WeatherApp';
+import Country_data from './components/Country_data';
 
 const  App=()=> {
   return (
@@ -31,6 +32,8 @@ const  App=()=> {
       <Route path='/Product' element={<Product/>}></Route>
       <Route path='/Extra' element={<Extra/>}></Route>
       <Route path='/WeatherApp' element={<WeatherApp/>}></Route>
+      <Route path='/Country_data' element={<Country_data/>}></Route>
+
 
       </Routes>
       <ToastContainer/>
