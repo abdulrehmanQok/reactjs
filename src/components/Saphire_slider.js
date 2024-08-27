@@ -10,15 +10,16 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 // };
 
 const data = [
-  "/images/slider1.jpg",
-  "/images/slider2.jpg",
-  "/images/slider3.jpg"   
+  " https://pk.sapphireonline.pk/cdn/shop/files/Desktop-Banner_53b7efcc-78bf-4207-ae94-845329b79dcc.jpg?v=1724304031&width=2000",
+  "https://pk.sapphireonline.pk/cdn/shop/files/US-intermix-Slider-Banner.jpg?v=1723726456&width=1800",
+  "https://pk.sapphireonline.pk/cdn/shop/files/modest_Slider_Banner.jpg?v=1723715836&width=1800",
+  "https://pk.sapphireonline.pk/cdn/shop/files/men_s_stitched-Slider-Banner.jpg?v=1723715454&width=1800"
 ];
 const items=data.map((x,i)=>{
   return <img key={i} src={x} alt={'Slide ${i+1}'} className='img-fluid' />;
 });
 
-const Slidebar = () => {
+const Saphire_slider = () => {
   return (
     <div className='container'>
     <AliceCarousel
@@ -37,4 +38,4 @@ const Slidebar = () => {
   )
 }
 
-export default Slidebar
+export default Saphire_slider

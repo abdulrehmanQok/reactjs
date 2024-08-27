@@ -1,0 +1,11 @@
+.card-container-trend {
+    display: flex;
+    /* justify-content: center; Aligns cards to the center with minimal space between */
+    gap: 10px; /* Sets the gap between the cards */
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 18rem;
+  }
+  

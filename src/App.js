@@ -1,44 +1,40 @@
-
-import { Route, Routes } from 'react-router-dom';
-import Contact from './components/Contact';
-import Form from './components/Form';
-import Home from './components/Home'
-// import Todo from './components/Todo';
+import React from 'react'
+import Saphirenav from './components/Saphirenav'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import React from 'react'
-  import 'react-toastify/dist/ReactToastify.css';
-  import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import Saphirenav2 from './components/Saphirenav2';
+import Saphire_slider from './components/Saphire_slider';
+import Saphire_catog from './components/Saphire_catog';
+import Saphire_footer from './components/Saphire_footer';
+import Saphire_trend from './components/Saphire_trend';
+import Saphire_more from './components/Saphire_more';
+import Saphire_styled from './components/Saphire_styled';
 
-import Navbar from './components/Navbar';
-import Signup from './auth/Signup';
-import Login from './auth/Login';
-import { Toast } from 'bootstrap';
-import Product from './pages/Product';
-import Extra from './components/Extra'; 
-import WeatherApp from './components/WeatherApp';
-import Country_data from './components/Country_data';
-
-const  App=()=> {
+// import Saphire_slider from './components/Saphire_slider'
+const App = (a) => {
   return (
     <div>
-      <Navbar/>
-      <Routes>
-      <Route path='/' element={<Home/>}></Route>
-      <Route path='/Form' element={<Form/>}></Route>
-      <Route path='/Contact' element={<Contact/>}></Route>
-      <Route path='/Signup' element={<Signup/>}></Route>
-      <Route path='/Login' element={<Login/>}></Route>
-      <Route path='/Product' element={<Product/>}></Route>
-      <Route path='/Extra' element={<Extra/>}></Route>
-      <Route path='/WeatherApp' element={<WeatherApp/>}></Route>
-      <Route path='/Country_data' element={<Country_data/>}></Route>
-
-
-      </Routes>
-      <ToastContainer/>
-
-
+    <Saphirenav/>
+    <Saphirenav2/>
+    <Saphire_slider/>
+    <div className='text-center'>    
+    <h1> SHOP BY CATOGERY </h1>
+</div>
+    <Saphire_catog/>
+    <div className='text-center'>
+    <h1> TRENDING  </h1>
+    </div>
+    <Saphire_trend/>
+    <div className='text-center'>
+      <h1>MORE TO EXPLORE</h1>
+    </div>
+    <Saphire_more/>
+    <div className='text-center'>
+      <h1>STYLED BY YOU</h1>
+      <h5>#SAPPHIREXME</h5>
+    </div>
+    <Saphire_styled/> 
+    <Saphire_footer/>
+          
     </div>
   )
 }
